@@ -1,0 +1,25 @@
+.headLink::after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #4169e1;
+	transition: width 0.3s ease;
+}
+
+.headLink {
+	position: relative;
+}
+
+@keyframes headLinkAnim {
+	0% {
+		width: 0%;
+		left: 0;
+	}
+	100% {
+		width: 100%;
+		left: 0;
+	}
+}
